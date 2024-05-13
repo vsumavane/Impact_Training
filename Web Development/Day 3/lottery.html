@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Lottery</title>
+    </head>
+    <body>
+        <h1>Lottery</h1>
+        <script>
+            let n = prompt("Enter a number from 1 to 10 to generate a lottery ticket:");
+            document.write("<h2>Lottery Ticket</h2>");
+            lottery = Math.floor(Math.random()*10);
+            while(true){
+            if( n == lottery){
+                document.write("<h1>7 Crore!!! </h1>" + "<br>" + "<img src='public/7 Crore.gif' alt='7 Crore!!1'>");
+                break;
+            } else {
+                document.write(" Afsos! Lottery thi number "+ lottery + "<br>" + "<div width = '50px'><img src='public/Amitabh Bachchan Headache.gif' alt='Afsos!'></div>");
+                n = prompt(" Afsos! Lottery thi number "+ lottery );
+            }
+            lottery = Math.floor(Math.random()*10);
+        }
+        </script>
+        
+    </body>
+</html>
